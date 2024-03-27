@@ -1,0 +1,873 @@
+{
+	"info": {
+		"_postman_id": "bf7d00af-d14f-4ca9-abe3-9ddf3d32b085",
+		"name": "DENT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16272302"
+	},
+	"item": [
+		{
+			"name": "KULLANICI",
+			"item": [
+				{
+					"name": "LİSTE",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/kullanici/liste",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"kullanici",
+								"liste"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TEK",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/kullanici/tek",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"kullanici",
+								"tek"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EKLE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"adi\": \"EFE\",\r\n    \"kadi\": \"efkocan\",\r\n    \"sifre\": \"123456\",\r\n    \"yetki\": \"user\",\r\n    \"hatirlaticisoru\": \"En sevdiğiniz renk nedir?\",\r\n    \"hatirlaticicevap\": \"Kırmızı\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/kullanici/ekle",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"kullanici",
+								"ekle"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GÜNCELLE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"adi\": \"EFE CAN\",\r\n    \"kadi\": \"efko\",\r\n    \"sifre\": \"1234\",\r\n    \"yetki\": \"user\",\r\n    \"hatirlaticisoru\": \"En sevdiğiniz renk nedir?\",\r\n    \"hatirlaticicevap\": \"Pembe\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/kullanici/guncelle",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"kullanici",
+								"guncelle"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SİL",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/kullanici/sil",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"kullanici",
+								"sil"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "HASTA",
+			"item": [
+				{
+					"name": "LİSTE",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/hasta/liste",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"hasta",
+								"liste"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TEK",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/hasta/tek",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"hasta",
+								"tek"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EKLE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"adi\": \"Yiğit1\",\r\n    \"soyadi\": \"yiğido1\",\r\n    \"tckimlik\": \"123456\",\r\n    \"dogum\": \"2012-01-07\",\r\n    \"kayit\": \"2010-02-10\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/hasta/ekle",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"hasta",
+								"ekle"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GÜNCELLE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"adi\": \"EFE\",\r\n    \"soyadi\": \"efkocan\",\r\n    \"tckimlik\": \"123456\",\r\n    \"dogum\": \"2012-01-03\",\r\n    \"kayit\": \"2012-01-5\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/hasta/guncelle",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"hasta",
+								"guncelle"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SİL",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/hasta/sil",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"hasta",
+								"sil"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "İŞLEMLER",
+			"item": [
+				{
+					"name": "TEK",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"hastaid\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/islem/tek",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"islem",
+								"tek"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EKLE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"hastaid\": 2,\r\n    \"islem\": \"Dolgu\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/islem/ekle",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"islem",
+								"ekle"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GÜNCELLE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 5,\r\n    \"hastaid\": 2,\r\n    \"islem\": \"2 dolgu\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/islem/guncelle",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"islem",
+								"guncelle"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SİL",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/islem/sil",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"islem",
+								"sil"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "BÜTÇE",
+			"item": [
+				{
+					"name": "LİSTE",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/butce/liste",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"butce",
+								"liste"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TEK",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/butce/tek",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"butce",
+								"tek"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EKLE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"hastaid\": 1,\r\n    \"alinacak\": 17,\r\n    \"alinan\": 7,\r\n    \"tarih\": \"2006-06-10\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/butce/ekle",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"butce",
+								"ekle"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GÜNCELLE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 6,\r\n    \"hastaid\": 1,\r\n    \"alinacak\": 1,\r\n    \"alinan\": 1,\r\n    \"tarih\": \"2011-11-11\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/butce/guncelle",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"butce",
+								"guncelle"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SİL",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/butce/sil",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"butce",
+								"sil"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ANALİZ",
+			"item": [
+				{
+					"name": "YILLIK",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/analiz/yil",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"analiz",
+								"yil"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AY",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/analiz/ay",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"analiz",
+								"ay"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "HASTA",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/analiz/hasta",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"analiz",
+								"hasta"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "MALZEME",
+			"item": [
+				{
+					"name": "LİSTE",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/malzeme/liste",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"malzeme",
+								"liste"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TEK",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":12\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/malzeme/tek",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"malzeme",
+								"tek"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EKLE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"adi\":\"yqkup\",\r\n    \"tutar\":52.25,\r\n    \"adet\":100,\r\n    \"tarih\":\"2012-01-07\",\r\n    \"limit\":25\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/malzeme/ekle",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"malzeme",
+								"ekle"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GÜNCELLE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":11,\r\n    \"adi\":\"efe\",\r\n    \"tutar\":52.25,\r\n    \"adet\":100,\r\n    \"tarih\":\"2012-01-07\",\r\n    \"limit\":25\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/malzeme/guncelle",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"malzeme",
+								"guncelle"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GÜNCELLE ADET",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":12,\r\n    \"adet\":66\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/malzeme/adet",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"malzeme",
+								"adet"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SİL",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":11\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/malzeme/sil",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"malzeme",
+								"sil"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

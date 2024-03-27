@@ -1,0 +1,58 @@
+CREATE TABLE IF NOT EXISTS public.tblbutce
+(
+    id serial,
+    hastaid integer NOT NULL,
+    alinacak double precision,
+    alinan double precision,
+    tarih date,
+    CONSTRAINT tblbutce_pkey PRIMARY KEY (id),
+    CONSTRAINT hastaid FOREIGN KEY (hastaid)
+        REFERENCES public.tblhastalar (id) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+)
+
+CREATE TABLE IF NOT EXISTS public.tblhastalar
+(
+    id serial,
+    adi character varying(255) COLLATE pg_catalog."default" NOT NULL,
+    soyadi character varying(255) COLLATE pg_catalog."default",
+    tckimlik character varying(11) COLLATE pg_catalog."default",
+    dogum date,
+    kayit date,
+    CONSTRAINT tblhasta_id_unique UNIQUE (id)
+)
+
+CREATE TABLE IF NOT EXISTS public.tblislemler
+(
+    id serial,
+    hastaid integer,
+    islem text COLLATE pg_catalog."default",
+    CONSTRAINT tblislemler_pkey PRIMARY KEY (id),
+    CONSTRAINT tblislemler_hastaid_fkey FOREIGN KEY (hastaid)
+        REFERENCES public.tblhastalar (id) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+)
+
+CREATE TABLE IF NOT EXISTS public.tblkullanicilar
+(
+    id serial,
+    adi character varying(255) COLLATE pg_catalog."default" NOT NULL,
+    kadi character varying(255) COLLATE pg_catalog."default" NOT NULL,
+    sifre character varying(255) COLLATE pg_catalog."default" NOT NULL,
+    yetki character varying(50) COLLATE pg_catalog."default" NOT NULL,
+    hatirlaticisoru character varying(255) COLLATE pg_catalog."default" NOT NULL,
+    hatirlaticicevap character varying(255) COLLATE pg_catalog."default" NOT NULL
+)
+
+CREATE TABLE IF NOT EXISTS public.tblmalzeme
+(
+    id serial,
+    adi text COLLATE pg_catalog."default",
+    tutar double precision,
+    adet integer,
+    tarih date,
+    "limit" integer,
+    CONSTRAINT tblmalzeme_pkey PRIMARY KEY (id)
+)
